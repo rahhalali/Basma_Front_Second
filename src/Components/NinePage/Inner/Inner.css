@@ -24,18 +24,52 @@
 .image.home{
     width: 33px;
 }
+@media screen and (max-width: 1100px) {
+    .nine-Inner{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .Inner-list{
+        width: 100%;
+        padding-right: 1%;
+    }
+    .nine-Inner li{
+        font-size: 17px;
+    }
+    .Inner-list .image{
+        width:30px;
+        height: 20px;
+    }
+    .Inner-list li .home{
+        font-size: 25px;
+        width: 43px;
+
+    }
+}
 @media screen and (max-width: 750px){
     .nine-Inner{
         width: 100%;
         margin-bottom: 5%;
-    }.nine-Inner li{
+    }
+    .nine-Inner li{
         font-size: 14px;
      }
-    .Inner-list .image{
-        width: 15px;
-    }
     .Inner-info{
         font-size: 14px;
     }
+    .Inner-list .image{
+        width:30px;
+        height: 20px;
+    }
+    .Inner-list li .home{
+        font-size: 50px;
+        width: 30px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Inner-list li .home{
+        font-size: 60px;
+        width: 40px;
 
+    }
 }

@@ -50,6 +50,17 @@
     font-weight: bold;
     font-size: 17px;
 }
+@media screen and (max-width: 820px){
+    .eight{
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .eight-container{
+        width: 90%;
+        padding: 2% 0;
+    }
+}
 @media screen and (max-width: 750px) {
     .eight{
         width: 100%;

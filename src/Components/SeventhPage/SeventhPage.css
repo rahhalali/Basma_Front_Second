@@ -35,6 +35,7 @@
     text-align: center;
     margin: 0 auto;
     font-size: 20px;
+    color: white !important;
 }
 p.italic{
     font-style: italic;
@@ -47,6 +48,25 @@ p.italic{
 .images-container .left-image img,.images-container .right-image img{
     width: 100%;
     height: 100%;
+}
+@media screen and (max-width: 1100px) {
+    .images-container .left-image,.images-container .right-image{
+        width: 140px;
+        height: 70px;
+    }
+}
+@media screen and (max-width: 820px){
+    .seventh{
+        width: 100%;
+    }
+    .seventh-info h1{
+        font-size: 40px;
+        padding-bottom: 2%;
+    }
+    .images-container .left-image,.images-container .right-image{
+        width: 110px;
+        height: 70px;
+    }
 }
 @media screen and (max-width: 750px){
     .seventh{
