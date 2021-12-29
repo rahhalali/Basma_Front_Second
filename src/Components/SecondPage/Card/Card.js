@@ -1,18 +1,11 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './Card.css'
-import {useDispatch, useSelector} from "react-redux";
-import {GetInfo} from "../../../Redux/SecondPageSlice";
+
 import {useTranslation} from "react-i18next";
 
 function Card() {
 
     const { t }= useTranslation();
-    // const dispatch=useDispatch();
-    // const Info = useSelector(state=>state.info);
-    // console.log('info',Info);
-    // useEffect(()=>{
-    //     dispatch(GetInfo());
-    // },[dispatch])
     return (
         <div className='card-inner'>
             <div className='second-page-card'>
