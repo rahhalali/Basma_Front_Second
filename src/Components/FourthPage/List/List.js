@@ -1,32 +1,37 @@
-import React, {Fragment, useEffect} from 'react';
+import React from 'react';
 import './List.css'
-import {useDispatch, useSelector} from "react-redux";
-import {GetInfo} from "../../../Redux/FourthPageSlice";
+import {useTranslation} from "react-i18next";
+
 function List() {
-    const dispatch=useDispatch();
-    const list =useSelector(state=>state.list)
-    useEffect(()=>{
-        dispatch(GetInfo())
-    },[dispatch]);
+    const { t }=useTranslation();
     return (
         <div className='list-fourth'>
-            {
-                list.info && list.info.map(item=>{
-                    return (
-                        <Fragment key={item.id}>
-                            <h1>{item.header}</h1>
+
+                            <h1>{t('fourth_header')}</h1>
                             <ul className='third-page-container-info-ul'>
-                                {item.info.map(items => (
-                                    <li key={items.id}>
-                                        <div><i className={items.icon}/></div>
-                                        <p>{items.infos}</p>
+                                    <li >
+                                        <div><i className={t('fourth_1_icon')}/></div>
+                                        <p>{t('fourth_1_infos')}</p>
                                     </li>
-                                ))}
+
+                                <li >
+                                    <div><i className={t('fourth_2_icon')}/></div>
+                                    <p>{t('fourth_2_infos')}</p>
+                                </li>
+
+                                <li >
+                                    <div><i className={t('fourth_3_icon')}/></div>
+                                    <p>{t('fourth_3_infos')}</p>
+                                </li>
+
+                                <li >
+                                    <div><i className={t('fourth_4_icon')}/></div>
+                                    <p>{t('fourth_4_infos')}</p>
+                                </li>
+
+
                             </ul>
-                        </Fragment>
-                    );
-                })
-            }
+
         </div>
     );
 }

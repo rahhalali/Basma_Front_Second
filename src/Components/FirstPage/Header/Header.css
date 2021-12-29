@@ -47,11 +47,25 @@ li.arrow::after{
 .price{
     cursor: pointer;
 }
+.inner-ul li{
+    list-style: none;
+    width: auto;
+}
+.inner-ul li button{
+    border: none;
+    padding: 5px;
+    width: 55px;
+    cursor: pointer;
+    color: #6D2DE3;
+    background-color: white;
+}
+.inner-ul li button:nth-child(1){
+    margin-bottom: 5px;
+}
 @media screen and (max-width: 820px) {
     nav.nav ul.ul li.li{
         display: flex;
         padding: 0.5rem 1rem;
-
     }
 }
 @media only screen and (max-width: 765px){

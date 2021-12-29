@@ -1,19 +1,19 @@
 import React from 'react';
 import './Content.css'
-import Thumb from '../../../Images/images/thumb-1.png'
+import Thumb from '../../../Images/images/thumb-1.png';
+import {useTranslation } from "react-i18next";
+
 function Content(props) {
+    const { t }= useTranslation();
     return (
         <div className='content'>
             <div className='container'>
                 <div className='info'>
                     <div className='info-inner'>
                         <h1>
-                            Creative way to Showcase your App
+                            {t('first_title')}
                         </h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            A alias, aliquam autem facilis illo ipsum minima necessitatibus
-                            obcaecati officia, perferendis, quibusdam sunt veniam. Ad cumque deleniti ipsa officiis
-                            possimus repudiandae?</p>
+                        <p>{t('first_paragraph')}</p>
                         <div className='button-container'>
                             <button className='btn'>Get Started</button>
                         </div>

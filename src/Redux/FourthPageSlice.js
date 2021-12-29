@@ -2,7 +2,7 @@ import {createSlice ,createAsyncThunk} from "@reduxjs/toolkit";
 export const GetInfo = createAsyncThunk(
     "list/GetInfo",
     async (payload) => {
-        const response =await  fetch('Json/FourthData.json'
+        const response =await  fetch('assets/locales/en/FourthData.json'
             ,{
                 headers : {
                     'Content-Type': 'application/json',
@@ -11,7 +11,7 @@ export const GetInfo = createAsyncThunk(
             }
         )
         const result =await response.json();
-        return { result:result }
+        return { result:result.fourth }
     }
 );
 

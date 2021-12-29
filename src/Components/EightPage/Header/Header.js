@@ -1,11 +1,12 @@
 import React from 'react';
 import './Header.css';
+import {useTranslation} from "react-i18next";
 function Header(props) {
+    const {t}=useTranslation();
     return (
         <div className='eight-header'>
-            <h1>Subscribe to get updates</h1>
-            <p>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore
-                repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>
+            <h1>{t('Eight_title')}</h1>
+            <p>{t('Eight_paragraph')}</p>
         </div>
     );
 }

@@ -1,12 +1,13 @@
 import React from 'react';
 import './Header.css';
+import {useTranslation} from "react-i18next";
 function Header(props) {
+    const {t}=useTranslation();
     return (
         <div className='header-second sixth-head owner'>
-            <h1><span>basma</span> Code Challenge</h1>
+            <h1><span>{t('Sixth_main_title1')} </span>{t('Sixth_main_title2')} </h1>
             <p className='header-second-info sixth-info '>
-                Lorem ipsum dolor sit amet, consectetur
-                possimus quasi rem vitae voluptatem. Architecto facilis saepe vitae?Architecto facilis saepe vitae?
+                {t('Sixth_main_paragraph')}
             </p>
 
         </div>

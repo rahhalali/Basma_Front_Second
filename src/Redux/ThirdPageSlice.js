@@ -3,7 +3,7 @@ export const GetParagraph = createAsyncThunk(
     "paragraph/GetInfo",
     async (payload) => {
 
-        const response =await  fetch('Json/ThirdData.json'
+        const response =await  fetch('assets/locales/en/FourthData.json'
             ,{
                 headers : {
                     'Content-Type': 'application/json',
@@ -12,7 +12,7 @@ export const GetParagraph = createAsyncThunk(
             }
         )
         const result =await response.json();
-        return { result:result }
+        return { result:result.third }
     }
 );
 

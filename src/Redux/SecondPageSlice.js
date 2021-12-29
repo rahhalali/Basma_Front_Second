@@ -4,8 +4,8 @@ export const GetInfo = createAsyncThunk(
     "info/GetInfo",
      async (payload) => {
         console.log('hekllo');
-       const response =await axios('Json/SecondData.json');
-       return { result: response.data }
+       const response =await axios('assets/locales/en/FourthData.json');
+       return { result: response.data.second }
     }
 );
 
